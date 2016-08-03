@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="300.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="its5201finalproject.SearchScreenController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="3.0" prefHeight="112.0" prefWidth="638.0" spacing="15.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Search by severity: " textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Find all headaches at least as severe as">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cboSeverity" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+                  <Button fx:id="btnSeverity" mnemonicParsing="false" text="Search" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="82.0" prefHeight="119.0" prefWidth="641.0" spacing="15.0">
+               <children>
+                  <Label text="Search by trigger: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cboTrigger" prefWidth="150.0" promptText="Select a trigger" />
+                  <Button fx:id="btnTrigger" mnemonicParsing="false" text="Search" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="btnCancel" layoutX="535.0" layoutY="232.0" mnemonicParsing="false" text="Cancel" />
+            <Label layoutX="29.0" layoutY="227.0" text="Filter results by: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cboFilter" layoutX="157.0" layoutY="225.0" prefWidth="150.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
